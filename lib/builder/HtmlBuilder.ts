@@ -92,7 +92,7 @@ module ReVIEW.Build {
 		}
 
 		headlinePost(process:BuilderProcess, name:string, node:HeadlineSyntaxTree) {
-			process.out("</h").out(node.level).out(">\n");
+			process.out("</h").out(node.level).out(">\n\n");
 		}
 
 		columnPre(process:BuilderProcess, node:ColumnSyntaxTree) {

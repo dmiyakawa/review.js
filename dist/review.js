@@ -7826,7 +7826,7 @@ var ReVIEW;
 
             TextBuilder.prototype.ulistPre = function (process, name, node) {
                 this.ulistParentHelper(process, node, function () {
-                    process.out("\n\n●\t");
+                    process.out("\n\n☆\t");
                 });
                 if (node.parentNode instanceof UlistElementSyntaxTree && node.prev instanceof UlistElementSyntaxTree === false) {
                     process.out("\n\n");
@@ -8323,7 +8323,7 @@ var ReVIEW;
             };
 
             HtmlBuilder.prototype.headlinePost = function (process, name, node) {
-                process.out("</h").out(node.level).out(">\n");
+                process.out("</h").out(node.level).out(">\n\n");
             };
 
             HtmlBuilder.prototype.columnPre = function (process, node) {
